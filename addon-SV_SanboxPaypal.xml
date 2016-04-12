@@ -7,7 +7,6 @@
   <admin_template_modifications/>
   <code_events/>
   <code_event_listeners>
-    <listener event_id="load_class" execute_order="10" callback_class="SV_SandboxPaypal_Listener" callback_method="load_class" active="1" hint="XenForo_UserUpgradeProcessor_PayPal" description="XenForo_UserUpgradeProcessor_PayPal"/>
     <listener event_id="load_class" execute_order="10" callback_class="SV_SandboxPaypal_Listener" callback_method="load_class" active="1" hint="XenForo_ControllerPublic_Account" description="XenForo_ControllerPublic_Account"/>
   </code_event_listeners>
   <cron/>
