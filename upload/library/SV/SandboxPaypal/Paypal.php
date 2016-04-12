@@ -1,6 +1,6 @@
 <?php
 
-class SV_SandboxPaypal_PayPal extends XenForo_UserUpgradeProcessor_PayPal
+class SV_SandboxPaypal_Paypal extends XenForo_UserUpgradeProcessor_PayPal
 {
     public function validateRequest(&$errorString)
     {
