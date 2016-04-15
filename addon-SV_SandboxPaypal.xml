@@ -19,7 +19,8 @@
     <interface_groups/>
   </permissions>
   <phrases>
-    <phrase title="sandboxing_paypal_but_debug_is_off" version_id="1" version_string="1.0.0"><![CDATA[Sandboxing Paypal, but debug mode is off]]></phrase>
+    <phrase title="sandboxing_paypal_but_debug_is_off" version_id="1000000" version_string="1.0.0"><![CDATA[Sandboxing Paypal, but debug mode is off]]></phrase>
+    <phrase title="sandboxing_paypal_but_live_paypal_in_use" version_id="1000000" version_string="1.0.0"><![CDATA[Expecting sandbox paypal flag]]></phrase>
   </phrases>
   <route_prefixes/>
   <style_properties/>
