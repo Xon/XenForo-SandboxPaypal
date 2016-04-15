@@ -2,4 +2,4 @@
 
 Forces the use paypal sandbox.
 
-Your dev site must correctly set the board url to the test site URL!
+The board's site URL must be correctly set for the paypal callback to work.
