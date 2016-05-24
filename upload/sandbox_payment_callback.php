@@ -13,7 +13,8 @@ $deps = new XenForo_Dependencies_Public();
 $deps->preLoadData();
 
 $response = new Zend_Controller_Response_Http();
-$processor = new SV_SandboxPaypal_Paypal();
+$class = XenForo_Application::resolveDynamicClass('SV_SandboxPaypal_Paypal');
+$processor = new $class();
 $processor->initCallbackHandling(new Zend_Controller_Request_Http());
 
 $logExtra = array();
