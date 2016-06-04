@@ -31,6 +31,10 @@
       <find><![CDATA[payment_callback.php]]></find>
       <replace><![CDATA[sandbox_payment_callback.php]]></replace>
     </modification>
+    <modification template="account_upgrades_extend" modification_key="sv_sandbox_paypal_account_upgrades2" description="Sandbox paypal upgrades" execution_order="10" enabled="1" action="str_replace">
+      <find><![CDATA[payment_callback.php]]></find>
+      <replace><![CDATA[sandbox_payment_callback.php]]></replace>
+    </modification>
   </public_template_modifications>
   <bb_code_media_sites/>
   <bb_codes/>
