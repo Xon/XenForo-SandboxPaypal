@@ -10,12 +10,16 @@ class SV_SandboxPaypal_XenForo_ControllerPublic_Account extends XFCP_SV_SandboxP
         {
             throw new XenForo_Exception(new XenForo_Phrase('sandboxing_paypal_but_debug_is_off'), true);
         }
-        if (empty($response->subView->params['payPalUrl']))
+        
+        if ($response instanceof XenForo_ControllerResponse_View)
         {
-            throw new Exception('Paypal sandboxing logic failure');
-        }
+            if (empty($response->subView->params['payPalUrl']))
+            {
+                throw new Exception('Paypal sandboxing logic failure');
+            }
 
-        $response->subView->params['payPalUrl'] = 'https://www.sandbox.paypal.com/cgi-bin/webscr';
+            $response->subView->params['payPalUrl'] = 'https://www.sandbox.paypal.com/cgi-bin/webscr';
+        }
 
         return $response;
     }
