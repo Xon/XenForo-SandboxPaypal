@@ -3,11 +3,11 @@
 Forces the use paypal sandbox.
 
 ## Activation requirements
-- Log in with your paypal account into [URL]https://developer.paypal.com/[/URL], and ensure you have a Business sandbox user and a Personal sandbox user (you may need to change the password on any existing accounts).
+- Log in with your paypal account into https://developer.paypal.com/, and ensure you have a Business sandbox user and a Personal sandbox user (you may need to change the password on any existing accounts).
 - Ensure your Business sandbox user has Instant Payment Notification (IPN) enabled.
 - Ensure this sandbox user is used by XenForo paypal configuration.
 - Ensure the board site URL points to the site (ie testing.example.com).
-- Your webserver [B]must[/B] be configured to allow anonymous access to the file.
+- Your webserver **must** be configured to allow anonymous access to the file.
  ```
  /sandbox_payment_callback.php
  ```
